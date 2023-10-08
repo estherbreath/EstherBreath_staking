@@ -1,12 +1,11 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-import "./IERC20.sol";
-
-contract EstherBreath  is ERC20, Ownable {
-       using SafeERC20 for IERC20;
+contract EstherBreath  is ERC20 {
+    using SafeERC20 for IERC20;
 
     uint256 public constant APR = 14; // Annual Percentage Rate
     uint256 public constant REWARD_RATIO = 10; // 1:10 ratio to ETH for reward

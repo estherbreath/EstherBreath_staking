@@ -11,7 +11,7 @@ contract RewardToken is ERC20 {
         uint256 _amount,
         address EstherBreath
     ) ERC20(_name, _symbol) {
-        _mint(EstherBreath, _ammount);
+        _mint(EstherBreath, _amount);
     }
 
 }
