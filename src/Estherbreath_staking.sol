@@ -107,6 +107,7 @@ contract EstherBreath  is ERC20 {
     function getAutoCompoundStatus(address user) external view returns (bool) {
         return autoCompounding[user];
     }
+
 }
 
 

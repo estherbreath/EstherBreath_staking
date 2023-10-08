@@ -30,7 +30,7 @@ function testValueGreaterThanZero() public {
     }
 
     function testAutoCompoundingNotEnabledForUser() public {
-        vm.expectRevert("Auto-compound not enabled for the user");
+       vm.expectRevert("Auto-compound not enabled for the user");
         estherBreath.compoundRewards();
     }
 
@@ -39,9 +39,10 @@ function testValueGreaterThanZero() public {
         estherBreath.withdraw();
     }
 
-    
-    
+       function testGetAutoCompoundFee() public {
+         vm.expectRevert();
+        estherBreath.getAutoCompoundStatus(0x68B3BD05Cd59E5785C44DF452b045c50431ee8d1);
+    }
     
 }
 
-//weth addr 0x68B3BD05Cd59E5785C44DF452b045c50431ee8d1
